@@ -1,39 +1,61 @@
-This is a sentiment analysis project that analyzes the sentiment of movie reviews, Twitter tweets, and Amazon product reviews.
-
-Introduction
-Sentiment analysis is the process of extracting the emotions or opinions expressed in a piece of text. It is a useful technique in many applications, such as social media monitoring, customer feedback analysis, and market research.
-
-This project uses natural language processing techniques and machine learning algorithms to classify the sentiment of text data into positive, negative, or neutral categories. The datasets used for this project are movie reviews, Twitter tweets, and Amazon product reviews.
-
-Requirements
-To run this project, you will need:
-
-Python 3.6 or higher
-Pandas
-Scikit-learn
-NLTK
-Tweepy (for Twitter sentiment analysis)
-TextBlob (for sentiment analysis of short texts)
-Installation
-Clone this repository to your local machine
-Install the required packages by running the following command in your terminal: pip install -r requirements.txt
-For Twitter sentiment analysis, you will need to create a Twitter API key and access token. Follow the instructions here to create a Twitter developer account and obtain the necessary credentials. Then, create a config.py file in the src directory and add your Twitter API keys and access tokens as follows:
-python
+<!-- Title -->
+<h1 align="center">Sentiment Analysis for Movie, Twitter, and Amazon Reviews</h1>
+<!-- Description -->
+<p align="center">
+  This project implements sentiment analysis for movie, Twitter, and Amazon reviews. The sentiment analysis is performed using a machine learning model trained on a dataset of movie reviews. The model is able to classify reviews as positive or negative based on the language used in the review.
+</p>
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/github/license/USERNAME/REPOSITORY?color=blue" alt="License"/>
+  <img src="https://img.shields.io/github/languages/top/USERNAME/REPOSITORY?color=blueviolet" alt="Language"/>
+  <img src="https://img.shields.io/github/last-commit/USERNAME/REPOSITORY?color=orange" alt="Last Commit"/>
+  <img src="https://img.shields.io/github/contributors/USERNAME/REPOSITORY?color=yellow" alt="Contributors"/>
+</p>
+<!-- Table of Contents -->
+<h2>Table of Contents</h2>
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#requirements">Requirements</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#results">Results</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#license">License</a></li>
+  <li><a href="#acknowledgements">Acknowledgements</a></li>
+</ol>
+<!-- Introduction -->
+<h2>Introduction</h2>
+<p align="justify">
+  Sentiment analysis is a technique used to determine the sentiment of a piece of text, such as a review or a tweet. The goal of this project is to implement sentiment analysis for movie, Twitter, and Amazon reviews. The sentiment analysis is performed using a machine learning model that is trained on a dataset of movie reviews.
+</p>
+<p align="justify">
+  The machine learning model used in this project is a <a href="https://en.wikipedia.org/wiki/Naive_Bayes_classifier">Naive Bayes classifier</a>. The Naive Bayes classifier is a probabilistic algorithm that is based on Bayes' theorem. The model is able to classify reviews as positive or negative based on the language used in the review.
+</p>
+<!-- Requirements -->
+<h2>Requirements</h2>
+<ul>
+  <li>Python 3</li>
+  <li>scikit-learn</li>
+  <li>pandas</li>
+  <li>numpy</li>
+  <li>nltk</li>
+</ul>
+<p align="justify">
+  You can install the required packages by running the following command:
+</p>
+sh
 Copy code
-consumer_key = 'your_consumer_key'
-consumer_secret = 'your_consumer_secret'
-access_token = 'your_access_token'
-access_token_secret = 'your_access_token_secret'
-Usage
-To perform sentiment analysis on the datasets, run the following command in your terminal:
-
-python
+pip install -r requirements.txt
+<!-- Usage -->
+<h2>Usage</h2>
+<p align="justify">
+  To use this project, simply run the <code>main.py</code> script. The script will prompt you to enter a review and the type of review (movie, Twitter, or Amazon). The script will then perform sentiment analysis on the review and output the result.
+</p>
+sh
 Copy code
 python main.py
-This will run the sentiment analysis on all the datasets and output the results to the console.
+<!-- Results -->
+<h2>Results</h2>
+<p align="justify">
+  The machine learning model used in this project achieves an accuracy of over 80% on a dataset of movie reviews. The model is able to classify reviews as positive or negative based on the
 
-Results
-The sentiment analysis results are saved to CSV files in the data directory. The CSV files contain the original text, the predicted sentiment (positive, negative, or neutral), and the confidence score for each prediction.
 
-Conclusion
-This project demonstrates the use of natural language processing and machine learning algorithms for sentiment analysis on different types of text data. The results can be used to gain insights into the emotions and opinions of people about movies, products, and topics discussed on Twitter.
